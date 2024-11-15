@@ -7,6 +7,10 @@ import { easeIn, motion } from "framer-motion"
 import {reveal} from "./utils/animation"
 
 function App() {
+
+  function onScrollClick() {
+    document.getElementById("experience").scrollIntoView();
+  }
   return (
     <main className="main">
       <motion.div className="container" initial="hiddenVariant" animate="revealedVariant" transition={{staggerChildren: 0.2, delayChildren:1.3}}>
@@ -16,7 +20,7 @@ function App() {
         <motion.a href="https://github.com/JustinTan-1" target="_blank" variants={reveal}><img src={Github} className="icon"/></motion.a>
         <motion.a href="https://www.linkedin.com/in/justintan217/" target="_blank" variants={reveal}><img src={Linkedin} className="icon"/></motion.a>
         </div>
-        <motion.a className="links" href="#experience" whileHover={{scale:1.05}} variants={reveal}>Experience</motion.a>
+        <motion.div className="links" href="#experience" whileHover={{scale:1.05}} variants={reveal} onClick={onScrollClick}>Experience</motion.div>
       </motion.div>
       <motion.div className="experience" id="experience" initial={{opacity: 0, y:50}} whileInView={{y:0,opacity:1}} viewport={{once:true, margin: "-200px"}} transition={{delay:0.2, duration:1, ease:easeIn,type: "spring"}}><h1 className="subtext">Experience</h1></motion.div>
       <div className="experience--container">

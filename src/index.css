@@ -75,4 +75,5 @@ html {
 .links {
   text-decoration: none;
   color: grey;
+  cursor: pointer;
 }
