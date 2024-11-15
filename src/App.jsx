@@ -17,8 +17,8 @@ function App() {
       <motion.img src={Justin} className="headshot"initial={{opacity:0}} animate={{opacity :1}} transition={{duration: 1}}/>
       <motion.h1 className="subtext" initial={{y:50, opacity:0}} animate={{y:0,opacity:1}} transition={{ease:easeIn,type: "spring"}}>Hey! I'm Justin, a computer science student at the University of Calgary!</motion.h1>
         <div className="icons">
-        <motion.a href="https://github.com/JustinTan-1" target="_blank" variants={reveal}><img src={Github} className="icon"/></motion.a>
-        <motion.a href="https://www.linkedin.com/in/justintan217/" target="_blank" variants={reveal}><img src={Linkedin} className="icon"/></motion.a>
+        <motion.a href="https://github.com/JustinTan-1" target="_blank" whileHover={{scale:1.05}} variants={reveal}><img src={Github} className="icon" /></motion.a>
+        <motion.a href="https://www.linkedin.com/in/justintan217/" target="_blank" whileHover={{scale:1.05}} variants={reveal}><img src={Linkedin} className="icon" /></motion.a>
         </div>
         <motion.div className="links" href="#experience" whileHover={{scale:1.05}} variants={reveal} onClick={onScrollClick}>Experience</motion.div>
       </motion.div>
