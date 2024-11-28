@@ -1,4 +1,4 @@
 # My portfolio website!
-HTML,CSS, ReactJS
+HTML, CSS, ReactJS
 
-**Link:**https://justin-tan.netlify.app/
+**Link:** https://justin-tan.netlify.app/
