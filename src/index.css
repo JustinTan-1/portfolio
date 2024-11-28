@@ -11,19 +11,20 @@ html {
 .subtext {
   color: white;
   font-size: 30px;
+  text-align: center;
 }
 
 .headshot {
   max-height: 300px;
   border-radius: 400px;
-  border: 2px solid black;
   margin-top: -100px;
 }
 
 .main {
   background: #14110F;
-  height: 2000px;
+  height: 1750px;
   border: 0.5px solid black;
+  width: auto;
 }
 
 .container {
@@ -34,7 +35,6 @@ html {
   height: 100vh;
   margin-top: 50px;
   gap: 50px;
-
 }
 
 .icon {
@@ -47,7 +47,6 @@ html {
 }
 
 .experience {
-  width: 500px;
   margin: auto;
   text-align: center;
   margin-bottom: 50px;
@@ -58,7 +57,20 @@ html {
   justify-content: space-between;
   align-items: center;
   width: 60%;
-  margin: auto
+  margin: auto;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .experience--container {
+      width: auto;
+  }
+  .experience--icon {
+    scale: 65%;
+  }
+  .experience {
+    margin-bottom: 0;
+  }
 }
 .experience--icon {
   border-radius: 400px;
@@ -75,5 +87,5 @@ html {
 .links {
   text-decoration: none;
   color: grey;
-  cursor: pointer;
+  cursor: pointer;  
 }

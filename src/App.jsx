@@ -9,7 +9,7 @@ import {reveal} from "./utils/animation"
 function App() {
 
   function onScrollClick() {
-    document.getElementById("experience").scrollIntoView();
+    document.getElementById("experience--section").scrollIntoView();
   }
   return (
     <main className="main">
@@ -20,16 +20,18 @@ function App() {
         <motion.a href="https://github.com/JustinTan-1" target="_blank" whileHover={{scale:1.05}} variants={reveal}><img src={Github} className="icon" /></motion.a>
         <motion.a href="https://www.linkedin.com/in/justintan217/" target="_blank" whileHover={{scale:1.05}} variants={reveal}><img src={Linkedin} className="icon" /></motion.a>
         </div>
-        <motion.div className="links" href="#experience" whileHover={{scale:1.05}} variants={reveal} onClick={onScrollClick}>Experience</motion.div>
+        <motion.div className="links" whileHover={{scale:1.05}} variants={reveal} onClick={onScrollClick}>Experience</motion.div>
       </motion.div>
-      <motion.div className="experience" id="experience" initial={{opacity: 0, y:50}} whileInView={{y:0,opacity:1}} viewport={{once:true, margin: "-200px"}} transition={{delay:0.2, duration:1, ease:easeIn,type: "spring"}}><h1 className="subtext">Experience</h1></motion.div>
+      <div id="experience--section">
+      <motion.div className="experience" id="experience" initial={{opacity: 0, y:50}} whileInView={{y:0,opacity:1}} viewport={{once:true}} transition={{delay:0.2, duration:1, ease:easeIn,type: "spring"}}><h1 className="subtext">Experience</h1></motion.div>
       <div className="experience--container">
-      <motion.img className="experience--icon" src={Bcharity} initial={{opacity: 0, y:50}} whileInView={{y:0,opacity:1}} viewport={{once:true, margin: "-200px"}} transition={{delay:0.5, duration:1, ease:easeIn,type: "spring"}}/>
-      <motion.div initial={{opacity: 0, y:50}} whileInView={{y:0,opacity:1}} viewport={{once:true, margin: "-200px"}} transition={{delay:0.5, duration:1, ease:easeIn,type: "spring"}}>
+      <motion.img className="experience--icon" src={Bcharity} initial={{opacity: 0, y:50}} whileInView={{y:0,opacity:1}} viewport={{once:true}} transition={{delay:0.5, duration:1, ease:easeIn,type: "spring"}}/>
+      <motion.div initial={{opacity: 0, y:50}} whileInView={{y:0,opacity:1}} viewport={{once:true}} transition={{delay:0.5, duration:1, ease:easeIn,type: "spring"}}>
       <motion.h1 className="experience--title">B-Charity</motion.h1>
       <motion.h2 className="experience--title">Software Developer Intern</motion.h2>
       <motion.p className="experience--description">2022</motion.p>
       </motion.div>
+      </div>
       </div>
     </main>
   )
