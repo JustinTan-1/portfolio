@@ -1,7 +1,6 @@
 * {
   margin: 0;
   font-family: "inter";
-
 }
 
 html {
@@ -10,8 +9,15 @@ html {
 
 .subtext {
   color: white;
-  font-size: 30px;
+  font-size: 50px;
   text-align: center;
+}
+
+.subtext2 {
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  width: 40vw;
 }
 
 .headshot {
@@ -22,7 +28,7 @@ html {
 
 .main {
   background: #14110F;
-  height: 1750px;
+  height: 2000px;
   border: 0.5px solid black;
   width: auto;
 }
@@ -85,7 +91,109 @@ html {
 }
 
 .links {
+  display: flex;
+  gap: 18px;
   text-decoration: none;
   color: grey;
   cursor: pointer;  
+}
+
+#skills {
+  padding: 4rem 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#skills h1 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  color: white;
+}
+
+.skills-grid {
+  width: 60vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 30%;
+  padding: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.skill-item img:hover {
+  transform: scale(1.1);
+}
+
+
+.skill--label {
+  margin-top: 8px;
+  color: white;
+}
+
+
+#projects {
+  text-align: center;
+}
+
+#projects h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-card {
+  padding: 8px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h3 {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.project-card p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  padding: 0 0.5rem;
+}
+
+.github--redirect {
+  width: 2.8%;
 }
