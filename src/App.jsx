@@ -1,8 +1,7 @@
 import React from "react"
-import Justin from "./assets/Cropped_Image.png"
-import Github from "./assets/github-icon-1-logo-svgrepo-com.svg"
-import Linkedin from "./assets/linkedin-svgrepo-com.svg"
-import Bcharity from "./assets/bcharity.jpeg"
+import Github from "/public/github-icon-1-logo-svgrepo-com.svg"
+import Linkedin from "/public/linkedin-svgrepo-com.svg"
+import Bcharity from "/public/bcharity.jpeg"
 import { easeIn, motion } from "framer-motion"
 import {reveal} from "./utils/animation"
 
@@ -41,46 +40,46 @@ function App() {
       <motion.h1 initial={{opacity: 0, y:50}} whileInView={{y:0,opacity:1}} viewport={{once:true}} transition={{delay:0.2, duration:1, ease:easeIn,type: "spring"}}>Technology</motion.h1>
       <motion.div initial={{opacity: 0, y:50}} whileInView={{y:0,opacity:1}} viewport={{once:true}} transition={{delay:0.5, duration:1, ease:easeIn,type: "spring"}} className="skills-grid">
         <div className="skill-item">
-          <img src="src/assets/React.png" alt="React" />
+          <img src="React.png" alt="React" />
         </div>
         <div className="skill-item">
-          <img src="src/assets/JavaScript.png" alt="JavaScript" />
+          <img src="/JavaScript.png" alt="JavaScript" />
         </div>
         <div className="skill-item">
-          <img src="src/assets/Node.png" alt="Node.js" />
+          <img src="/Node.png" alt="Node.js" />
         </div>
         <div className="skill-item">
-          <img src="src/assets/Python.png" alt="Python" />
+          <img src="/Python.png" alt="Python" />
         </div>
         <div className="skill-item">
-          <img src="src/assets/Docker.png" alt="Docker" />
+          <img src="/Docker.png" alt="Docker" />
         </div>
         <div className="skill-item">
-          <img src="src/assets/Java.png" alt="Java" />
+          <img src="/Java.png" alt="Java" />
         </div>
         <div className="skill-item">
-          <img src="src/assets/PostgresSQL.png" alt="Postgres " />
+          <img src="/PostgresSQL.png" alt="Postgres " />
         </div>
         <div className="skill-item">
-          <img src="src/assets/Flask.png" alt="Flask" />
+          <img src="/Flask.png" alt="Flask" />
         </div>
         <div className="skill-item">
-          <img src="src/assets/PyTorch.png" alt="PyTorch" />
+          <img src="/PyTorch.png" alt="PyTorch" />
         </div>
         <div className="skill-item">
-          <img src="src/assets/Git.png" alt="Git" />
+          <img src="/Git.png" alt="Git" />
         </div>
         <div className="skill-item">
-          <img src="src/assets/HTML5.png" alt="HTML" />
+          <img src="/HTML5.png" alt="HTML" />
         </div>
         <div className="skill-item">
-          <img src="src/assets/CSS3.png" alt="CSS" />
+          <img src="/CSS3.png" alt="CSS" />
         </div>
         <div className="skill-item">
-          <img src="src/assets/scikit-learn.png" alt="sci-kit learn" />
+          <img src="/scikit-learn.png" alt="sci-kit learn" />
         </div>
         <div className="skill-item">
-          <img src="src/assets/OpenCV.png" alt="OpenCV" />
+          <img src="/OpenCV.png" alt="OpenCV" />
         </div>
       </motion.div>
     </section>
@@ -89,11 +88,11 @@ function App() {
     <motion.h1 initial={{opacity: 0, y:50}} whileInView={{y:0,opacity:1}} viewport={{once:true}} transition={{delay:0.2, duration:1, ease:easeIn,type: "spring"}}>Projects</motion.h1>
     <motion.div initial={{opacity: 0, y:50}} whileInView={{y:0,opacity:1}} viewport={{once:true}} transition={{delay:0.5, duration:1, ease:easeIn,type: "spring"}} class="projects-grid">
       <div class="project-card">
-        <h3>Math Recognition <a href="https://github.com/JustinTan-1/math-recognition" target="_blank"><img src="src/assets/GitHub.png" className="github--redirect"></img></a></h3>
+        <h3>Math Recognition <a href="https://github.com/JustinTan-1/math-recognition" target="_blank"><img src="/GitHub.png" className="github--redirect"></img></a></h3>
         <p>Chrome extension that allows users to draw math symbols and copy their desired symbol. </p>
       </div>
       <div class="project-card">
-          <h3>DiscordX <a href="https://github.com/JustinTan-1/discordXAPI" target="_blank"><img src="src/assets/GitHub.png" className="github--redirect"></img></a></h3>
+          <h3>DiscordX <a href="https://github.com/JustinTan-1/discordXAPI" target="_blank"><img src="/GitHub.png" className="github--redirect"></img></a></h3>
         <p>Discord mass message management. Connects to your discord account and allows you to monitor channels and reply to messages easily with Google Gemini API.</p>
       </div>
     </motion.div>
