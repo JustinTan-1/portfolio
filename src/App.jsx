@@ -5,7 +5,19 @@ import Bcharity from "/public/bcharity.jpeg"
 import { easeIn, motion } from "framer-motion"
 import {reveal} from "./utils/animation"
 
+
 function App() {
+  
+  React.useEffect(() => {
+    if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
+    }
+      window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant",
+    });
+  })
   return (
     <main className="main">
       <motion.div className="container" initial="hiddenVariant" animate="revealedVariant" transition={{staggerChildren: 0.2, delayChildren:1.3}}>

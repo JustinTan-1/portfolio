@@ -77,6 +77,12 @@ html {
   .experience {
     margin-bottom: 0;
   }
+  .main {
+    height: 3000px;
+  }
+  .subtext2 {
+    width: 80vw;
+}
 }
 .experience--icon {
   border-radius: 400px;
