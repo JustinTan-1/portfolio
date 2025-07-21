@@ -29,14 +29,22 @@ function App() {
         </div>
       </motion.div>
 
-      <div id="experience--section">
+      <div className="experience--section">
       <motion.div className="experience" id="experience" initial={{opacity: 0, y:50}} whileInView={{y:0,opacity:1}} viewport={{once:true}} transition={{delay:0.2, duration:1, ease:easeIn,type: "spring"}}><h1 className="subtext">Experience</h1></motion.div>
+      <div className="experience--container">
+      <motion.img className="experience--icon" src={"SJTU.png"} initial={{opacity: 0, y:50}} whileInView={{y:0,opacity:1}} viewport={{once:true}} transition={{delay:0.5, duration:1, ease:easeIn,type: "spring"}}/>
+      <motion.div initial={{opacity: 0, y:50}} whileInView={{y:0,opacity:1}} viewport={{once:true}} transition={{delay:0.5, duration:1, ease:easeIn,type: "spring"}}>
+        <motion.h1 className="experience--title">SJTU</motion.h1>
+        <motion.h2 className="experience--title">Machine Learning Researcher</motion.h2>
+        <motion.p className="experience--description">2025</motion.p>
+      </motion.div>
+      </div>
       <div className="experience--container">
       <motion.img className="experience--icon" src={Bcharity} initial={{opacity: 0, y:50}} whileInView={{y:0,opacity:1}} viewport={{once:true}} transition={{delay:0.5, duration:1, ease:easeIn,type: "spring"}}/>
       <motion.div initial={{opacity: 0, y:50}} whileInView={{y:0,opacity:1}} viewport={{once:true}} transition={{delay:0.5, duration:1, ease:easeIn,type: "spring"}}>
-      <motion.h1 className="experience--title">B-Charity</motion.h1>
-      <motion.h2 className="experience--title">Software Developer Intern</motion.h2>
-      <motion.p className="experience--description">2022</motion.p>
+        <motion.h1 className="experience--title">B-Charity</motion.h1>
+        <motion.h2 className="experience--title">Software Developer Intern</motion.h2>
+        <motion.p className="experience--description">2022</motion.p>
       </motion.div>
       </div>
       </div>

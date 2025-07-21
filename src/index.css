@@ -28,7 +28,7 @@ html {
 
 .main {
   background: #14110F;
-  height: 2000px;
+  height: 2300px;
   border: 0.5px solid black;
   width: auto;
 }
@@ -66,6 +66,16 @@ html {
   margin: auto;
 }
 
+.experience--section {
+  flex-direction: column;
+  display: flex;
+  gap: 20px;
+}
+
+.experience--title {
+  color: white;
+  width: 350px;
+}
 
 @media screen and (max-width: 1000px) {
   .experience--container {
@@ -82,15 +92,20 @@ html {
   }
   .subtext2 {
     width: 80vw;
-}
+  }
+
+  .experience--title {
+    width: 200px;
+  }
 }
 .experience--icon {
   border-radius: 400px;
+  width: 175px;
+  padding: 1rem;
+  background-color: white;
 }
 
-.experience--title {
-  color: white;
-}
+
 
 .experience--description {
   color: grey;
