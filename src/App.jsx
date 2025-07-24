@@ -4,6 +4,7 @@ import Linkedin from "/public/linkedin-svgrepo-com.svg"
 import Bcharity from "/public/bcharity.jpeg"
 import { easeIn, motion } from "framer-motion"
 import {reveal} from "./utils/animation"
+import "tailwindcss";
 
 
 function App() {
