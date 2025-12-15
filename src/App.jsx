@@ -53,8 +53,8 @@ function App() {
         >
           I'm Justin, a computer science student at the{" "}
           <motion.a
+            className="a-underline-animation"
             href="https://uwaterloo.ca/"
-            style={{ display: "inline-block" }}
             transition={{
               duration: 0.18,
               ease: [0.4, 0, 0.2, 1], // material-like ease
