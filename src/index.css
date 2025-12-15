@@ -244,3 +244,8 @@ html {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+.email {
+  position: relative;
+  top: 8px;
+}

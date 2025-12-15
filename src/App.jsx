@@ -7,6 +7,7 @@ import { reveal } from "./utils/animation";
 import "tailwindcss";
 import Typewriter from "typewriter-effect";
 import Waterloo from "./assets/waterloo";
+import Email from "/public/Email.png";
 
 function App() {
   React.useEffect(() => {
@@ -75,6 +76,13 @@ function App() {
             variants={reveal}
           >
             <img src={Github} className="icon" />
+          </motion.a>
+          <motion.a
+            href="mailto:tanjustin217@gmail.com"
+            whileHover={{ scale: 1.05 }}
+            variants={reveal}
+          >
+            <img src={Email} className="icon email" />
           </motion.a>
           <motion.a
             href="https://www.linkedin.com/in/justintan217/"
