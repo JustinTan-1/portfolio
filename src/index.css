@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   font-family: "inter";
@@ -28,7 +27,7 @@ html {
 }
 
 .main {
-  background: #14110F;
+  background: #14110f;
   min-height: 2500px;
   border: 0.5px solid black;
   width: auto;
@@ -81,7 +80,7 @@ html {
 
 @media screen and (max-width: 1000px) {
   .experience--container {
-      width: auto;
+    width: auto;
   }
   .experience--icon {
     scale: 65%;
@@ -116,7 +115,7 @@ html {
   gap: 18px;
   text-decoration: none;
   color: grey;
-  cursor: pointer;  
+  cursor: pointer;
 }
 
 #skills {
@@ -153,7 +152,7 @@ html {
   border-radius: 30%;
   padding: 1rem;
   background-color: #ffffff;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: 0.3s ease;
 }
 
@@ -161,12 +160,10 @@ html {
   transform: scale(1.1);
 }
 
-
 .skill--label {
   margin-top: 8px;
   color: white;
 }
-
 
 #projects {
   text-align: center;
@@ -190,7 +187,7 @@ html {
   padding: 8px;
   background-color: #fff;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -217,4 +214,14 @@ html {
 
 .github--redirect {
   width: 2.8%;
+}
+
+.Waterloo {
+  width: 1.2em;
+  text-align: center;
+  vertical-align: -0.2em;
+}
+
+a {
+  color: inherit;
 }
