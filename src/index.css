@@ -89,7 +89,7 @@ html {
     margin-bottom: 0;
   }
   .main {
-    height: 3000px;
+    height: 3700px;
   }
   .subtext2 {
     width: 80vw;
@@ -213,7 +213,7 @@ html {
 }
 
 .github--redirect {
-  width: 2.8%;
+  width: 4.5%;
 }
 
 .Waterloo {
@@ -248,4 +248,18 @@ html {
 .email {
   position: relative;
   top: 8px;
+}
+
+.project-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.bricked-video {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
 }

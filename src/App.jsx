@@ -242,43 +242,96 @@ function App() {
         >
           Projects
         </motion.h1>
+
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.5, duration: 1, ease: easeIn, type: "spring" }}
-          class="projects-grid"
+          className="projects-grid"
         >
-          <div class="project-card">
-            <h3>
-              Math Recognition{" "}
-              <a
-                href="https://github.com/JustinTan-1/math-recognition"
-                target="_blank"
-              >
-                <img src="/GitHub.png" className="github--redirect"></img>
-              </a>
-            </h3>
-            <p>
-              Chrome extension that allows users to draw math symbols and copy
-              their desired symbol.{" "}
-            </p>
+          <div className="project-card">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              controlslist="nodownload"
+              disablepictureinpicture
+              className="bricked-video"
+            >
+              <source src="/Bricked.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+
+            <div className="project-content">
+              <h3>
+                Bricked{" "}
+                <a
+                  href="https://github.com/sahijdev/bricked"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="/GitHub.png" className="github--redirect" />
+                </a>
+              </h3>
+
+              <p>3D AI Generated LEGO Instructions!</p>
+            </div>
           </div>
-          <div class="project-card">
-            <h3>
-              DiscordX{" "}
-              <a
-                href="https://github.com/JustinTan-1/discordXAPI"
-                target="_blank"
-              >
-                <img src="/GitHub.png" className="github--redirect"></img>
-              </a>
-            </h3>
-            <p>
-              Discord mass message management. Connects to your discord account
-              and allows you to monitor channels and reply to messages easily
-              with Google Gemini API.
-            </p>
+          {/* Project 1 */}
+          <div className="project-card">
+            <img
+              src="/mathRecognitionPicture.png"
+              alt="Math Recognition Preview"
+              className="project-image"
+            />
+
+            <div className="project-content">
+              <h3>
+                Math Recognition{" "}
+                <a
+                  href="https://github.com/JustinTan-1/math-recognition"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="/GitHub.png" className="github--redirect" />
+                </a>
+              </h3>
+
+              <p>
+                Chrome extension that allows users to draw math symbols and copy
+                their desired symbol.
+              </p>
+            </div>
+          </div>
+
+          {/* Project 2 */}
+          <div className="project-card">
+            <img
+              src="/DiscordPreview.png"
+              alt="DiscordX Preview"
+              className="project-image"
+            />
+
+            <div className="project-content">
+              <h3>
+                DiscordX{" "}
+                <a
+                  href="https://github.com/JustinTan-1/discordXAPI"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="/GitHub.png" className="github--redirect" />
+                </a>
+              </h3>
+
+              <p>
+                Discord mass message management. Connects to your Discord
+                account and allows you to monitor channels and reply to messages
+                easily with Google Gemini API.
+              </p>
+            </div>
           </div>
         </motion.div>
       </section>
