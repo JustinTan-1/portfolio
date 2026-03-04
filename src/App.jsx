@@ -325,7 +325,7 @@ function App() {
               <h3>
                 UnlinkedPay{" "}
                 <a
-                  href="https://github.com/JustinTan-1/discordXAPI"
+                  href="https://github.com/JustinTan-1/UnlinkedPay"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
