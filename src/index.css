@@ -89,7 +89,7 @@ html {
     margin-bottom: 0;
   }
   .main {
-    height: 3950px;
+    height: 4200px;
   }
   .subtext2 {
     width: 80vw;
@@ -214,6 +214,7 @@ html {
 
 .github--redirect {
   width: 3.5%;
+  vertical-align: -10%;
 }
 
 .Waterloo {
@@ -241,6 +242,31 @@ html {
   transition: transform 0.25s ease-out;
 }
 .a-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.a-underline-animation2 {
+  color: inherit;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+}
+
+.a-underline-animation2::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.a-underline-animation2:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }

@@ -65,8 +65,8 @@ function App() {
           >
             <Waterloo className="Waterloo"></Waterloo> University of Waterloo!
           </motion.a>{" "}
-          I love creating sites and apps and learning new things! I also enjoy
-          badminton🏸, ping pong🏓, and piano🎹.
+          If not building, you will catch me at the ping pong table 🏓 or in the
+          gym💪.
         </motion.h2>
         <div className="icons">
           <motion.a
@@ -109,6 +109,38 @@ function App() {
         <div className="experience--container">
           <motion.img
             className="experience--icon"
+            src={"Clearway.jpeg"}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{
+              delay: 0.5,
+              duration: 1,
+              ease: easeIn,
+              type: "spring",
+            }}
+          />
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{
+              delay: 0.5,
+              duration: 1,
+              ease: easeIn,
+              type: "spring",
+            }}
+          >
+            <motion.h1 className="experience--title">Clearway</motion.h1>
+            <motion.h2 className="experience--title">
+              Machine Learning Intern
+            </motion.h2>
+            <motion.p className="experience--description">2026</motion.p>
+          </motion.div>
+        </div>
+        <div className="experience--container">
+          <motion.img
+            className="experience--icon"
             src={"SJTU.png"}
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ y: 0, opacity: 1 }}
@@ -133,7 +165,7 @@ function App() {
           >
             <motion.h1 className="experience--title">SJTU</motion.h1>
             <motion.h2 className="experience--title">
-              Machine Learning Researcher
+              Machine Learning Intern
             </motion.h2>
             <motion.p className="experience--description">2025</motion.p>
           </motion.div>
@@ -266,14 +298,20 @@ function App() {
 
             <div className="project-content">
               <h3>
-                Bricked{" "}
-                <a
+                <motion.a
+                  className="a-underline-animation2"
                   href="https://github.com/sahijdev/bricked"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  transition={{
+                    duration: 0.18,
+                    ease: [0.4, 0, 0.2, 1], // material-like ease
+                  }}
+                  whileHover={{ y: -1 }}
+                  initial={{ y: 0 }}
                 >
-                  <img src="/GitHub.png" className="github--redirect" />
-                </a>
+                  {" "}
+                  Bricked
+                </motion.a>
+                <img src="link.png" className="github--redirect" />
               </h3>
 
               <p>3D AI Generated LEGO Instructions!</p>
@@ -289,14 +327,20 @@ function App() {
 
             <div className="project-content">
               <h3>
-                Math Recognition{" "}
-                <a
+                <motion.a
+                  className="a-underline-animation2"
                   href="https://github.com/JustinTan-1/math-recognition"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  transition={{
+                    duration: 0.18,
+                    ease: [0.4, 0, 0.2, 1], // material-like ease
+                  }}
+                  whileHover={{ y: -1 }}
+                  initial={{ y: 0 }}
                 >
-                  <img src="/GitHub.png" className="github--redirect" />
-                </a>
+                  {" "}
+                  Math Recognition
+                </motion.a>
+                <img src="link.png" className="github--redirect" />
               </h3>
 
               <p>
@@ -308,6 +352,34 @@ function App() {
 
           {/* Project 2 */}
           <div className="project-card">
+            <img
+              src="/codenames.png"
+              alt="Codenames Logo"
+              className="project-image"
+            />
+
+            <div className="project-content">
+              <h3 className="title">
+                <motion.a
+                  className="a-underline-animation2"
+                  href="https://www.roblox.com/games/106379064506188/Codewords"
+                  transition={{
+                    duration: 0.18,
+                    ease: [0.4, 0, 0.2, 1], // material-like ease
+                  }}
+                  whileHover={{ y: -1 }}
+                  initial={{ y: 0 }}
+                >
+                  {" "}
+                  Codewords
+                </motion.a>
+                <img src="link.png" className="github--redirect" />
+              </h3>
+
+              <p>Codenames on Roblox! 1M+ plays.</p>
+            </div>
+          </div>
+          <div className="project-card">
             <video
               autoPlay
               loop
@@ -317,47 +389,26 @@ function App() {
               disablepictureinpicture
               className="bricked-video"
             >
-              <source src="/UnlinkedPayVid.mp4" type="video/mp4" />
+              <source src="/DiscordX.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
 
             <div className="project-content">
               <h3>
-                UnlinkedPay{" "}
-                <a
-                  href="https://github.com/JustinTan-1/UnlinkedPay"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src="/GitHub.png" className="github--redirect" />
-                </a>
-              </h3>
-
-              <p>
-                Private payroll system that pays salaries in crypto without your
-                entire compensation structure becoming public on a block
-                explorer.
-              </p>
-            </div>
-          </div>
-          {/* Project 2 */}
-          <div className="project-card">
-            <img
-              src="/DiscordPreview.png"
-              alt="DiscordX Preview"
-              className="project-image"
-            />
-
-            <div className="project-content">
-              <h3>
-                DiscordX{" "}
-                <a
+                <motion.a
+                  className="a-underline-animation2"
                   href="https://github.com/JustinTan-1/discordXAPI"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  transition={{
+                    duration: 0.18,
+                    ease: [0.4, 0, 0.2, 1], // material-like ease
+                  }}
+                  whileHover={{ y: -1 }}
+                  initial={{ y: 0 }}
                 >
-                  <img src="/GitHub.png" className="github--redirect" />
-                </a>
+                  {" "}
+                  DiscordX
+                </motion.a>
+                <img src="link.png" className="github--redirect" />
               </h3>
 
               <p>
